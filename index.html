@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  background: #fff;
+  line-height:26px;
+}
+
+h1 {
+ font-family: "Lato", sans-serif;
+font-weight: 700;
+font-style: normal;
+color: #98c23d;
+  font-size: 32px;
+  
+}
+
+
+.content {
+  width: 80%;
+  padding: 20px;
+  margin: 0 auto;
+  padding: 0 60px 0 0;
+}
+
+.centerplease {
+  margin: 0 auto;
+  max-width: 270px;
+  font-size: 40px;
+}
+
+.question {
+  color: #fff;
+  position: relative;
+  background: #98c23d;
+  background: transparent;
+  margin: 0;
+  padding: 10px 10px 10px 50px;
+  display: block;
+  width:100%;
+  cursor: pointer;
+}
+
+.answers {
+  font-weight:300;
+  background: #f2f2f2;
+  padding: 0px 15px;
+  margin: 0px 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  position: relative;
+  opacity: 0;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.questions:checked ~ .answers{
+  height: auto;
+  opacity: 1;
+  padding: 15px;
+}
+
+.plus {
+  color:#fff;
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 5px;
+  z-index: 5;
+  font-size: 2em;
+  line-height: 100%;
+  -webkit-user-select: none;    
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.questions:checked ~ .plus {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.questions {
+  display: none;
+}
+.BTN{
+    transition-duration: 0.4s;
+    border: none;
+    border-radius: 6px;
+  color: rgb(5, 4, 4);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  box-shadow: rgb(192, 15, 15);
+  background-color: violet;
+}
+.BTN:hover{
+    background-color: #4CAF50; /* Green */
+  color: white;
+}
+    </style>
+</head>
+<body style="background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg');">
+    
+
+<div class="content">
+    
+      
+    <!-- __________________________ SECTIONS ___________________________ --> 
+    <button class="BTN">GO TO HOME</button>
+    
+    <h1>ACHIEVEMENTS AND RECOGNITIONS</h1>
+    
+    <div>
+      <input type="checkbox" id="question1" name="q"  class="questions">
+      <div class="plus">+</div>
+      <label for="question1" class="question">
+        •	1st Position in ECELL-MNIT hackathon RUNNERS-UP in Start-Up Grind IIIT BHU   Finalists in IIT DELHI hackathon
+      </label>
+      <div class="answers">
+        <p>Our hardcover books are library bound with exposed reinforced endsheets, which means extra lasting power, use after use. They are side sewn or section sewn, and all covers are laminated with glossy film. The books are vibrant, durable, and unconditionally guaranteed. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ --> 
+    <div>
+      <input type="checkbox" id="question2" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question2" class="question">
+        •	Stood 4th in MANIT BHOPAL HACKATHON AND Won certificate of appreciation for event management during E-SUMMIT of Jadavpur University
+      </label>
+      <div class="answers">
+        <p>Many of Cavendish Square’s products are produced with recycled pulp content, allowing our company to pursue its green goals while adding additional value for your eco-conscious purchases. </p>
+        
+      </div>
+    </div>
+     <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question3" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question3" class="question">
+    
+•	Won best marketing award in DhI-YUG Ideathon fintech AND
+
+      </label>
+      <div class="answers">
+        <p>Cavendish Square gladly provides library processing services. Please call 1-877-980-4450 or email Customer Service to learn more about processing and available and customizable options for your bookshelf needs. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question4" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question4" class="question">
+    Do you keep my library processing specifications on file?
+      </label>
+      <div class="answers">
+        <p>Yes, Cavendish Square keeps all customer processing specifications on file. You won't need to fill out library processing forms each time you order, we’ll do it for you. You can download a processing form here. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question5" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question5" class="question">
+        •	AIR 608 and Global Rank 2070 in Google HashCode      
+      </label>
+      <div class="answers">
+        <p>We offer free processing on all orders over $350.  On orders less than $350 the cost of barcodes and marc records is $25.00 per order. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question6" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question6" class="question">
+        •	4th position in LAUNCHX organized by E-CELL JU
+      </label>
+      <div class="answers">
+        <p>Accelerated Reader quizzes are available for many of our books.  The AR Logo will appear where quizzes are available.  For more about AR, please click here. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question7" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question7" class="question">
+        •	17TH Position in The Business Finance Quiz organized by International Institute of Finance and Business.
+      </label>
+      <div class="answers">
+        <p>Yes, all of our books are correlated to state and national standards. This web site’s correlation page will help you easily match our products with your state standards, and choose excellent selections for national standards. Otherwise, feel free to call us at 1-877-980-4450 and we’ll assist you in meeting your needs. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question8" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question8" class="question">
+        •	4th position in Game of Sharks, Daulat Ram College, Delhi University
+      </label>
+      <div class="answers">
+        <p>Cavendish Square commissions authors who are subject-matter experts and professional writers. If you’d like to learn more about an author’s background or if you wish to contact one of our authors, please click here to submit your contact information along with the author’s name. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question9" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question9" class="question">
+        •	Runners up in Big Idea, IIM Amritsar
+      </label>
+      <div class="answers">
+        <p>Cavendish Square would like to hear from you—we’re dedicated to offering an ever-expanding array of solutions that will meet your needs. Any ideas, suggestions, or creative input that Cavendish Square can follow to help you achieve academic success, please feel free to share with our representatives. Artists and writers may also contact our Customer Service team for information about contributing to Cavendish. </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question10" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question10" class="question">
+        •	Runners up in Synergy'22, Training and Development Club, Delhi School of Economics
+      </label>
+      <div class="answers">
+        <p>Cavendish Square titles are also available as eBooks.  Also available are over 50 database titles.  Click here for more information on our eBooks and digital databases.  For a complete list of available digital resources, please call Customer Service at 1-877-980-4450 between 9AM and 5 PM EST, Monday through Friday. </p>
+        
+      </div>
+    </div>
+    
+    <!-- __________________________ SECTIONS ___________________________ --> 
+    
+    <h3>PURCHASE, ORDERING, & RETURNS</h3>
+    
+    <div>
+      <input type="checkbox" id="question11" name="q"  class="questions">
+      <div class="plus">+</div>
+      <label for="question11" class="question">
+        •	Nationalist Finalist in Imperium and Pragnya, Annual Business Flagship Event of IIM Indore
+      </label>
+      <div class="answers">
+        <p>S&L means school/library.  Our school/library prices reflect a 30% discount off list prices.
+        </p>
+        
+      </div>
+    </div>
+    <!-- _____________________________________________________ --> 
+    <div>
+      <input type="checkbox" id="question12" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question12" class="question">
+        •	4th position in Captain Pitchers, E-Cell, MANIT Bhopal
+      </label>
+      <div class="answers">
+        <p>You can order Cavendish Square Products by mail, toll-free fax or telephone, and online through our cart or quick order portals.</p>
+        <p>
+         To order online, please select items for your cart and proceed to Checkout, or you can input ISBNs directly to create a quick order here.
+        </p>
+    
+      </div>
+    </div>
+     <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question13" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question13" class="question">
+        •	Qualified for SMART INDIA HACKATHON to represent Jadavpur University on national platform
+      </label>
+      <div class="answers">
+        <p>Cavendish Square is happy to redeem all coupons, price-reduction offers, online purchase bonuses, and special discounts. Please include any coupons or offers with mailed or faxed orders.</p>
+        <p>
+          
+          When placing your online order please follow instructions for coupon and bonus redemption. For any price-reduction offers and special discounts, please include these details within the comment section of the purchase portal.</p>
+        <p>
+          
+          You can also contact Customer Service at 1-877-980-4450 between 9 AM and 5 PM, EST, Monday through Friday to redeem offers.
+        </p>
+      </div>
+    </div>
+    <!-- _____________________________________________________ -->  
+    <div>
+      <input type="checkbox" id="question14" name="q" class="questions">
+      <div class="plus">+</div>
+      <label for="question14" class="question">
+        •	Finalists in WOMEN TECHIES 2022
+      </label>
+      <div class="answers">
+        <p>Our standard shipping time is 7 to 10 business days from the receipt of your purchase order for in-stock items. If your order requires expedited delivery, please call Customer Service at 1-877-980-4450. </p>
+        
+      </div>
+    </div>
+  
+    <!-- _____________________________________________________ --> 
+    
+    
+    
+    
+    
+    
+    </div>
+</body>
+</html>
